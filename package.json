@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/index.ts",
+    "start": "ts-node src/cli.ts mint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
@@ -16,8 +16,10 @@
   "license": "ISC",
   "dependencies": {
     "@reservoir0x/reservoir-sdk": "^2.4.35",
-    "viem": "~2.17.4",
-    "dotenv": "^16.4.1"
+    "@types/commander": "^2.12.5",
+    "commander": "^11.1.0",
+    "dotenv": "^16.4.1",
+    "viem": "~2.17.4"
   },
   "devDependencies": {
     "@types/node": "^20.11.16",

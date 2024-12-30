@@ -1,6 +1,6 @@
 # NFT Mass Minter
 
-A script to mint many NFTs
+A CLI tool for minting multiple NFTs from a collection using the Reservoir SDK.
 
 ## Setup
 
@@ -26,10 +26,16 @@ Edit `.env` file with your details:
 
 ## Usage
 
-Run the minter:
+Run the minter using the CLI:
 ```bash
+# Using npm start (recommended)
 npm start
+
+# Or using the CLI directly
+ts-node src/cli.ts mint
 ```
+
+The tool will read all necessary parameters from your `.env` file.
 
 ## Development
 
